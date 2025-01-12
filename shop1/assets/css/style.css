@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*
+1 lam tu ngoai vao trong
+2 lam tu tren xuong duoi
+3 tong quan den chi tiet
+\
+1 vi tri
+2 kich thuoc(quan tam chieu ngang )
+3 mau sac
+4 kieu dang(kieu chu,hinh tron,...)
+*/
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main {
+
+}
+
+#header {
+    background-color: black;
+    height: 46px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+
+}
+#nav{
+    display: inline-block;
+}
+#nav .subnav{
+    list-style-type: none ;
+}
+#nav > li{
+    
+    display:inline-block;
+}
+#nav li{
+    
+    position: relative;
+}
+#nav > li > a{
+    display:inline-block;
+    color: white;
+    text-transform: uppercase;
+  
+}
+#nav li a{
+   
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0  24px;
+    display: inline-block;
+
+}
+#nav li:hover .subnav{
+    display: block;
+   
+}
+
+#nav .subnav li:hover a,
+#nav > li:hover > a{
+    color: black;
+    background-color: #ccc;
+    display: block;
+    
+
+}
+#nav .subnav {
+    /* de chac chan ko loi hien thi thi nen co dinhj chieu cao cho 
+    thanh nay*/
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    display: none;
+    background-color: white;
+    position: absolute;
+    box-shadow: 0 0 10px rgba(0, 0,0, 0.3);
+    
+}
+#nav .subnav a{
+    color: #000;
+    padding: 0 16px;
+}
+
+#slider {
+min-height: 500px;
+background-color:white;
+}
+#header .search-btn{
+    
+    float: right;
+   
+
+}
+#header .search-btn:hover{
+    background-color: rgb(162, 28, 28);
+    cursor: pointer;
+}
+#header .fa-magnifying-glass{
+   color: white;
+  padding: 0 16px;
+  line-height: 46px;
+  font-size: 20px;
+    
+   
+}
+
+#content {
+    height: 1000px;
+     background-color: #ccc;
+}
+#slider{
+    position: relative;
+    margin-top: 46px;
+  padding-top: 50%;
+  background: url(/shop1/assets/css/img/download.jpg) top center /cover;
+}
+#slider .text-content{
+    position: absolute;
+    bottom: 40px;
+    left: 44%;
+    color: antiquewhite;
+
+}
+#slider .text-heading{
+
+}
+#slider .text-description{
+    padding : 10px 0;
+    margin-left: 35px   ;
+
+
+}
